@@ -1,35 +1,56 @@
-# Portfolio Website
+# Personal Academic Portfolio — Taimur Rahman
 
-A responsive personal portfolio showcasing my academic journey, projects, and experience as an Electronics & Telecommunication Engineering student at CUET.
+A responsive academic portfolio website showcasing my professional background, teaching experience, research projects, and publications in Structural Engineering and Machine Learning.
 
-🔗 **Live Demo**: [nabilaeusha.github.io](https://nabilaeusha.github.io)
+🔗 **Live Website:** [taimur-wub.github.io/taimur_info](https://taimur-wub.github.io/taimur_info/)
 
-## Features
+---
 
-- Dark/Light theme toggle with persistent storage
-- Responsive design for all devices
-- Dynamic section loading
-- Smooth animations and transitions
-- Interactive navigation
+## ✨ Features
 
-## Tech Stack
+- Light/Dark theme toggle (light mode by default)
+- Modular, dynamically loaded sections
+- Responsive design for desktop and mobile
+- Clean academic layout highlighting education, research, and editorial roles
+- Easy future scalability for new projects and publications
 
-- HTML5, CSS3, JavaScript
-- Font Awesome & Ionicons
-- Google Maps integration
+---
 
-## Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/NabilaEusha/NabilaEusha.github.io.git
+## 🧰 Tech Stack
+
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Icons:** Font Awesome
+- **Version Control:** Git + GitHub Pages (for hosting)
+
+---
+
+## 📁 Project Structure
+
+```
+├── index.html          # Main entry point
+├── style.css           # Global styling
+├── script.js           # Section loading and theme handling
+├── sections/           # Modular content files
+├── img/                # Image assets
+└── README.md           # Project description
 ```
 
-## Project Structure
-```
-├── index.html          # Main file
-├── style.css           # Styling
-├── script.js           # Functionality
-├── sections/           # Section content
-├── img/                # Images
-└── assets/             # Documents
-```
+---
+
+## 🧠 Acknowledgment
+
+This project is adapted and customized from the open-source portfolio by **[Nabila Eusha](https://github.com/NabilaEusha/NabilaEusha.github.io)**, with extensive modifications for academic and research-oriented presentation by **Taimur Rahman**.
+
+---
+
+## 📬 Contact
+
+**Taimur Rahman**  
+Assistant Professor, Department of Civil Engineering  
+World University of Bangladesh  
+🔗 [LinkedIn](https://www.linkedin.com/in/taimurrahman) • [Google Scholar](https://scholar.google.com/) • [GitHub](https://github.com/taimur-wub)
+
+---
+
+### © 2025 Taimur Rahman  
+This repository is licensed for academic and personal portfolio use.
