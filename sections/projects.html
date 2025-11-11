@@ -1,0 +1,297 @@
+<section id="projects">
+  <div class="section-header">
+    <h2>Research &amp; Projects</h2>
+  </div>
+
+  <div class="projects-intro">
+    <p>
+      My research integrates structural engineering with modern machine learning to develop interpretable,
+      reliable models for seismic response, structural dynamics, and advanced cementitious materials.
+      The focus is on scalable data generation, ensemble learning, probabilistic modeling, and symbolic
+      regression that lead to practical tools, dashboards, and design equations for engineers.
+    </p>
+  </div>
+
+  <div class="flagship-projects">
+
+    <!-- Flagship Project 1 -->
+    <div class="project-item">
+      <h3>1. Data Driven Fundamental Period Models for Steel Braced RC Frames</h3>
+      <p>
+        A comprehensive research program that constructs large scale numerical datasets and machine learning
+        models to predict the fundamental period of steel braced RC buildings more accurately than traditional
+        empirical code expressions. Using automated ETABS based model generation, stacked generalization, model
+        interpretability, and deep symbolic regression, this work captures the real influence of bracing systems,
+        geometry, and stiffness distributions.
+      </p>
+
+      <p><strong>Why this research is valuable</strong></p>
+      <ul>
+        <li>Existing code formulas are often calibrated on limited data and primarily depend on building height.</li>
+        <li>Braced RC frames are widely used in practice, but their dynamic characteristics are poorly represented in
+            conventional period expressions.</li>
+        <li>This project provides data driven and interpretable models that reduce uncertainty in seismic demand
+            estimation and support performance based design.</li>
+      </ul>
+
+      <p><strong>Key methods and contributions</strong></p>
+      <ul>
+        <li>Automated generation and eigenvalue analysis of 17,280 braced RC frame models using the ETABS API.</li>
+        <li>Stacked generalization ensembles with optimized base learners to achieve high accuracy and robustness.</li>
+        <li>SHAP based interpretability to identify how individual parameters (height, brace type, configuration,
+            mass and stiffness distribution) influence the fundamental period.</li>
+        <li>Deep symbolic regression to derive closed form, code compatible period formulas for different bracing
+            systems, linking ML outputs back to engineering intuition.</li>
+        <li>Supported by the <strong>World University of Bangladesh Internal Research Grant</strong>.</li>
+      </ul>
+
+      <p><strong>Key publications</strong></p>
+      <ul>
+        <li>
+          <a href="https://doi.org/10.1007/s42107-023-00914-9" target="_blank" rel="noopener">
+            Data driven approach to predict the fundamental period of steel braced RC frames using stacked
+            generalization machine learning models (2024)
+          </a>
+          <span class="journal-meta">(Asian Journal of Civil Engineering, Scopus Q2)</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s43503-025-00051-z" target="_blank" rel="noopener">
+            Comprehensive analysis of structural parameters influencing the fundamental period of steel braced
+            RC buildings using machine learning interpretability (2025)
+          </a>
+          <span class="journal-meta">(AI in Civil Engineering, Scopus Indexed)</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s42107-024-01076-y" target="_blank" rel="noopener">
+            Deep symbolic regression for numerical formulation of fundamental period in concentrically steel
+            braced RC frames (2024)
+          </a>
+          <span class="journal-meta">(Asian Journal of Civil Engineering, Scopus Q2)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Flagship Project 2 -->
+    <div class="project-item">
+      <h3>2. Bayesian Optimized LightGBM for Masonry Infilled RC Frames</h3>
+      <p>
+        This project develops a LightGBM based model, tuned via Bayesian optimization, for predicting the
+        fundamental vibrational period of masonry infilled RC frames. The emphasis is on speed, stability,
+        and deployment readiness, enabling engineers to update predictions rapidly as new data or design
+        scenarios emerge.
+      </p>
+
+      <p><strong>Why this research is valuable</strong></p>
+      <ul>
+        <li>Masonry infills significantly modify lateral stiffness yet are often neglected or oversimplified
+            in dynamic modeling.</li>
+        <li>Fast and accurate ML models make it feasible to perform rapid what if analyses during retrofit,
+            assessment, and code calibration.</li>
+        <li>The approach demonstrates how production quality ML can be integrated in structural engineering
+            workflows rather than used as standalone experiments.</li>
+      </ul>
+
+      <p><strong>Key methods and contributions</strong></p>
+      <ul>
+        <li>Bayesian optimization to efficiently identify LightGBM hyperparameters for structured engineering data.</li>
+        <li>Model architecture designed for rapid retraining and sensitivity exploration.</li>
+        <li>Interactive dashboard implementation for practical use by structural engineers.</li>
+      </ul>
+
+      <p><strong>Key publication</strong></p>
+      <ul>
+        <li>
+          <a href="https://doi.org/10.1007/s11709-024-1077-z" target="_blank" rel="noopener">
+            Bayesian optimized LightGBM model for predicting the fundamental vibrational period of masonry
+            infilled RC frames (2024)
+          </a>
+          <span class="journal-meta">(Frontiers of Structural and Civil Engineering, Scopus Q1)</span>
+        </li>
+      </ul>
+
+      <p class="note">
+        This work also marks my first joint publication with Shamima Sultana, reflecting a personal and
+        collaborative milestone in structural ML research.
+      </p>
+    </div>
+
+    <!-- Flagship Project 3 -->
+    <div class="project-item">
+      <h3>3. NGBoost with DSMBO for UHPC Compressive Strength Prediction</h3>
+      <p>
+        A probabilistic machine learning framework for predicting the compressive strength of Ultra High
+        Performance Concrete (UHPC) using heterogeneous datasets collected from multiple studies. The model
+        integrates Natural Gradient Boosting (NGBoost) with dynamic sequential model based optimization,
+        enabling accurate, uncertainty aware predictions that generalize across variations in mix design,
+        materials, and testing conditions.
+      </p>
+
+      <p><strong>Why this research is valuable</strong></p>
+      <ul>
+        <li>UHPC design relies on expensive experiments and scattered datasets with inconsistent distributions.</li>
+        <li>Conventional ML models often show reduced reliability when trained on merged heterogeneous data.</li>
+        <li>This framework improves predictive stability while quantifying uncertainty, supporting more confident
+            mix design and performance evaluation.</li>
+      </ul>
+
+      <p><strong>Key methods and contributions</strong></p>
+      <ul>
+        <li>Compiled 920 UHPC mixes with 14 input parameters from diverse experimental sources.</li>
+        <li>Used NGBoost with DSMBO to adapt hyperparameters to heterogeneous data landscapes.</li>
+        <li>Applied SHAP based analysis to identify influential constituents and provide interpretable insights
+            for material engineers.</li>
+        <li>Developed a web based GUI for real time UHPC strength prediction and scenario testing.</li>
+      </ul>
+
+      <p><strong>Key publication</strong></p>
+      <ul>
+        <li>
+          <a href="https://doi.org/10.1016/j.mtcomm.2025.112405" target="_blank" rel="noopener">
+            Optimizing NGBoost with dynamic sequential model based optimization for predicting UHPC
+            compressive strength on heterogeneous datasets (2025)
+          </a>
+          <span class="journal-meta">(Materials Today Communications, Scopus Q1)</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Publications list -->
+  <div class="subsection">
+    <h3>Publications</h3>
+
+    <div class="pub-year">
+      <h4>2025</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://doi.org/10.1007/s43503-025-00051-z" target="_blank" rel="noopener">
+            Rahman, T., Momin, M. F., &amp; Provasha, A. A. (2025).
+            Comprehensive analysis of structural parameters influencing the fundamental period of steel braced RC
+            buildings using machine learning interpretability.
+            <em>AI in Civil Engineering</em>.
+          </a>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1016/j.mtcomm.2025.112405" target="_blank" rel="noopener">
+            Rahman, T., Momin, M. F., Podder, S. K., Li, H., &amp; Zheng, P. (2025).
+            Optimizing NGBoost with dynamic sequential model based optimization for predicting UHPC compressive
+            strength on heterogeneous datasets.
+            <em>Materials Today Communications</em>.
+          </a>
+          <span class="journal-meta">(Scopus Q1)</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year">
+      <h4>2024</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://doi.org/10.1007/s11709-024-1077-z" target="_blank" rel="noopener">
+            Rahman, T., Zheng, P., &amp; Sultana, S. (2024).
+            Bayesian optimized LightGBM model for predicting the fundamental vibrational period
+            of masonry infilled RC frames.
+            <em>Frontiers of Structural and Civil Engineering</em>.
+          </a>
+          <span class="journal-meta">(Scopus Q1)</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s42107-024-01076-y" target="_blank" rel="noopener">
+            Rahman, T., Sultana, S., Ahmed, T., Momin, M. F., &amp; Provasha, A. A. (2024).
+            Deep symbolic regression for numerical formulation of fundamental period in concentrically
+            steel braced RC frames.
+            <em>Asian Journal of Civil Engineering</em>.
+          </a>
+          <span class="journal-meta">(Scopus Q2)</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.46610/JoST.2024.v09i03.003" target="_blank" rel="noopener">
+            Rahman, T. (2024).
+            Unsupervised machine learning driven assessment of infill wall systems for structural performance
+            in soft stories.
+            <em>Journal of Structural Technology</em>.
+          </a>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1007/s42107-023-00914-9" target="_blank" rel="noopener">
+            Rahman, T., Hasan, M. H., Momin, M. F., &amp; Zheng, P. (2024).
+            Data driven approach to predict the fundamental period of steel braced RC frames using stacked
+            generalization machine learning models.
+            <em>Asian Journal of Civil Engineering</em>.
+          </a>
+          <span class="journal-meta">(Scopus Q2)</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1109/IPEM.2024.10925732" target="_blank" rel="noopener">
+            Sultana, S., Rahman, T., Khatun, H., Sultana, N., Islam, M. R., &amp; Ahmed, N. (2024).
+            Bayesian and genetic optimization for human activity recognition with CNN and LSTM.
+            <em>International Conference on Intelligent and Innovative Practices in Engineering and Management</em>.
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year">
+      <h4>2023</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://data.mendeley.com/datasets/dm227xmgx2" target="_blank" rel="noopener">
+            Rahman, T., &amp; Hasan, M. H. (2023).
+            Fundamental period of steel braced RC structures.
+            <em>Mendeley Data</em>.
+          </a>
+        </li>
+        <li>
+          <a href="https://matjournals.co.in/index.php/JoGS/article/view/1631" target="_blank" rel="noopener">
+            Rekha, S. A., &amp; Rahman, T. (2023).
+            Dynamic behavior analysis of LNG tank under different earthquake loads.
+            <em>Journal of Geotechnical Studies</em>.
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year">
+      <h4>2022</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://doi.org/10.46610/jocce.2022.v08i03.002" target="_blank" rel="noopener">
+            Hossain, M. O., Rahman, T., Podder, S. K., Hasan, M. H., &amp; Momin, M. F. (2022).
+            Evaluation of RC building under seismic load based on BNBC 2006 and BNBC 2020 using
+            equivalent static force (ESF) method.
+            <em>Journal of Civil and Construction Engineering</em>.
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year">
+      <h4>2020</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://www.ajer.org/papers/Vol-9-issue-6/L09068293.pdf" target="_blank" rel="noopener">
+            Rahman, T., &amp; Zheng, P. (2020).
+            Numerical assessment of temperature distribution in the orthotropic steel deck and main truss
+            of a rail cum road bridge.
+            <em>American Journal of Engineering Research</em>, 9(6), 82–93.
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-year">
+      <h4>2015</h4>
+      <ul class="pub-list">
+        <li>
+          <a href="https://www.ajer.org/papers/v4(04)/T04401430147.pdf" target="_blank" rel="noopener">
+            Ahmed, T., &amp; Rahman, T. (2015).
+            Non auditory health hazard vulnerability to noise pollution: Assessing public awareness gap.
+            <em>American Journal of Engineering Research</em>, 4(4), 143–147.
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
